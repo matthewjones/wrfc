@@ -1,0 +1,226 @@
+var dataSet = [
+	["09/18/2022", "L","Black Swarm",5,13, "Mudsock (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["09/18/2022", "W","Black Swarm",14,5, "Mudsock (C)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["09/25/2022", "L","Black Swarm",5,20, "Noblesville", "Carroll MS", "HS 7s Regular Season", "B Side", ""]
+	, ["09/25/2022", "W","Black Swarm",17,15, "Noblesville (B)", "Carroll MS", "HS 7s Regular Season", "B Side", ""]
+	, ["09/25/2022", "L","Black Swarm",5,17, "Chargers (B)", "Carroll MS", "HS 7s Regular Season", "B Side", ""]
+	, ["10/02/2022", "L","Black Swarm",12,10, "Carmel (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["10/02/2022", "D","Black Swarm",12,12, "Mudsock (C)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["10/02/2022", "","Black Swarm","","", "Noblesville", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["10/09/2022", "L","Black Swarm",7,20, "Mudsock (B)", "Moose Rugby Grounds", "HS 7s Tournament", "B Side", ""]
+	, ["10/09/2022", "","Black Swarm","","", "Carmel (B)", "Moose Rugby Grounds", "HS 7s Tournament", "B Side", ""]
+	, ["09/18/2022", "W","Black Swarm",12,0, "Bishop Dwenger", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/18/2022", "W","Black Swarm",41,0, "Chargers", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/25/2022", "W","Black Swarm",27,0, "Chargers (B)", "Carroll MS", "HS 7s Regular Season", "", ""]
+	, ["09/25/2022", "W","Black Swarm",34,0, "Noblesville", "Carroll MS", "HS 7s Regular Season", "", ""]
+	, ["10/02/2022", "W","Black Swarm",32,7, "Royal Irish", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/02/2022", "W","Black Swarm",33,0, "Brownsburg", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/02/2022", "D","Black Swarm",19,19, "Mudsock", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/09/2022", "W","Black Swarm",29,12, "Brownsburg", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/09/2022", "W","Black Swarm",17,5, "Chargers", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/09/2022", "W","Black Swarm",38,5, "Penn", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/09/2022", "W","Black Swarm",26,10, "Mudsock", "Moose Rugby Grounds", "HS 7s Tournament", "Fall 7s Champion", ""]
+	, ["04/14/2023", "W","Black Swarm",25,15, "Mudsock (B)", "Cyntheanne Park", "HS 15s Regular Season", "B Side", ""]
+	, ["04/19/2023", "D","Black Swarm",12,12, "Carmel (B)", "Cyntheanne Park", "HS 15s Regular Season", "B Side", ""]
+	, ["04/22/2023", "W","Black Swarm",34,5, "Bishop Dwenger (B)", "Cyntheanne Park", "HS 15s Regular Season", "B Side", ""]
+	, ["05/10/2023", "L","Black Swarm",12,22, "Mudsock (B)", "Cyntheanne Park", "HS 15s Regular Season", "B Side", ""]
+	, ["05/13/2023", "L","Black Swarm",0,24, "Penn (B)", "Cyntheanne Park", "HS 15s Regular Season", "B Side", ""]
+	, ["03/13/2023", "W","Black Swarm",45,0, "St Louis University JV", "Marian University", "Friendly", "", ""]
+	, ["04/12/2023", "W","Black Swarm",48,5, "Brownsburg", "Avon", "Friendly", "", ""]
+	, ["04/19/2023", "W","Black Swarm",36,0, "Carmel", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/22/2023", "W","Black Swarm",27,10, "Bishop Dwenger", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/28/2023", "L","Black Swarm",5,41, "Pendleton", "Pendleton", "HS 15s Regular Season", "", ""]
+	, ["05/03/2023", "L","Black Swarm",31,32, "Royal Irish", "Avon", "HS 15s Regular Season", "", ""]
+	, ["05/06/2023", "L","Black Swarm",0,24, "St Ignatius", "Moose Rugby Grounds", "Midwest Tournament", "", ""]
+	, ["05/06/2023", "W","Black Swarm",19,10, "Royal Irish", "Moose Rugby Grounds", "Midwest Tournament", "", ""]
+	, ["05/07/2023", "L","Black Swarm",0,12, "Bishop Dwenger", "Moose Rugby Grounds", "Midwest Tournament", "", ""]
+	, ["05/10/2023", "W","Black Swarm",34,19, "Mudsock", "Cyntheanne Park", "HS 15s Regular Season", "", ""]
+	, ["05/13/2023", "L","Black Swarm",12,31, "Penn", "Moose Rugby Grounds", "HS 15s Regular Season", "", ""]
+	, ["05/17/2023", "W","Black Swarm",39,3, "Carmel", "Avon", "HS 15s Tournament", "Play In", ""]
+	, ["05/27/2023", "W","Black Swarm",38,21, "Bishop Dwenger", "Cyntheanne Park", "HS 15s Tournament", "Semifinal", ""]
+	, ["05/29/2023", "D","Black Swarm",20,20, "Pendleton", "Cyntheanne Park", "HS 15s Tournament", "Final", ""]
+	, ["09/17/2023", "W","Black Swarm",15,10, "Penn (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["09/17/2023", "W","Black Swarm",17,0, "Carmel (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["09/24/2023", "L","Black Swarm",0,35, "Zionsville (B)", "Carroll MS", "HS 7s Regular Season", "B Side", ""]
+	, ["09/24/2023", "W","Black Swarm",19,10, "Chargers (B)", "Carroll MS", "HS 7s Regular Season", "B Side", ""]
+	, ["10/01/2023", "L","Black Swarm",5,29, "Zionsville (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["09/17/2023", "W","Black Swarm",46,0, "Leo", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/17/2023", "W","Black Swarm",21,0, "Royal Irish", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/24/2023", "W","Black Swarm",47,0, "Culver", "Carroll MS", "HS 7s Regular Season", "", ""]
+	, ["09/24/2023", "W","Black Swarm",34,0, "Noblesville", "Carroll MS", "HS 7s Regular Season", "", ""]
+	, ["09/24/2023", "W","Black Swarm",55,5, "Carmel", "Carroll MS", "HS 7s Regular Season", "", ""]
+	, ["10/01/2023", "W","Black Swarm",27,12, "Zionsville", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/01/2023", "D","Black Swarm",0,0, "Royal Irish", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/01/2023", "W","Black Swarm",57,5, "Carmel", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/08/2023", "W","Black Swarm",22,17, "Mudsock", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/08/2023", "W","Black Swarm",27,12, "Brownsburg", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/08/2023", "W","Black Swarm",27,12, "Chargers", "Moose Rugby Grounds", "HS 7s Tournament", "Semifinal", ""]
+	, ["10/08/2023", "W","Black Swarm",24,7, "Zionsville", "Moose Rugby Grounds", "HS 7s Tournament", "Fall 7s Champion", ""]
+	, ["02/24/2024", "W","Black Swarm",12,5, "St Louis University JV", "Father Ryan", "Friendly", "B Side", ""]
+	, ["02/24/2024", "W","Black Swarm",28,0, "Father Ryan", "Father Ryan", "Friendly", "", ""]
+	, ["02/24/2024", "W","Black Swarm",26,0, "St Louis University", "Father Ryan", "Friendly", "", ""]
+	, ["02/24/2024", "W","Black Swarm",10,12, "St Martin (KS)", "Father Ryan", "Friendly", "", ""]
+	, ["03/02/2024", "L","Black Swarm",14,22, "St Thomas Aquinas", "Lindenwood University", "Friendly", "", ""]
+	, ["03/03/2024", "W","Black Swarm",24,17, "STL Jets", "Lindenwood University", "Friendly", "", ""]
+	, ["04/06/2024", "L","Black Swarm",3,69, "Pendleton", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/13/2024", "L","Black Swarm",17,36, "Mudsock", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/20/2024", "L","Black Swarm",27,32, "Penn", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/24/2024", "L","Black Swarm",17,34, "Royal Irish", "Bishop Chatard", "HS 15s Regular Season", "", ""]
+	, ["05/11/2024", "D","Black Swarm",7,7, "Bishop Dwenger", "Bishop Dwenger", "HS 15s Regular Season", "", ""]
+	, ["09/29/2024", "L","Black Swarm",14,21, "Chargers (B)", "Moose Rugby Grounds", "HS 7s Regular Season", "B Side", ""]
+	, ["09/29/2024", "W","Black Swarm",45,0, "Penn (B)", "Moose Rugby Grounds", "HS 7s Regular Season", "B Side", ""]
+	, ["09/29/2024", "D","Black Swarm",24,24, "Carmel", "Moose Rugby Grounds", "HS 7s Regular Season", "B Side", ""]
+	, ["10/06/2024", "W","Black Swarm",22,5, "Westfield (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["10/06/2024", "W","Black Swarm",22,0, "Noblesville (B)", "Westfield ", "HS 7s Regular Season", "B Side", ""]
+	, ["10/13/2024", "L","Black Swarm",0,39, "Mudsock (B)", "Moose Rugby Grounds", "HS 7s Festival", "B Side", ""]
+	, ["10/13/2024", "L","Black Swarm",5,26, "Carmel", "Moose Rugby Grounds", "HS 7s Festival", "B Side", ""]
+	, ["09/22/2024", "L","Black Swarm",7,17, "Westfield", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/22/2024", "L","Black Swarm",5,20, "Mudsock", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/22/2024", "L","Black Swarm",0,34, "Zionsville", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/29/2024", "L","Black Swarm",5,42, "Chargers", "Moose Rugby Grounds", "HS 7s Regular Season", "", "https://www.youtube.com/watch?v=W6KwAOUYP7g"]
+	, ["09/29/2024", "L","Black Swarm",0,20, "Penn", "Moose Rugby Grounds", "HS 7s Regular Season", "", ""]
+	, ["09/29/2024", "L","Black Swarm",5,15, "Bishop Dwenger", "Moose Rugby Grounds", "HS 7s Regular Season", "", ""]
+	, ["10/06/2024", "L","Black Swarm",12,19, "Westfield", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/06/2024", "W","Black Swarm",7,0, "Noblesville", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/06/2024", "W","Black Swarm",24,7, "Brownsburg", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["10/13/2024", "D","Black Swarm",12,12, "Penn", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/13/2024", "L","Black Swarm",0,38, "Chargers", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["03/08/2025", "D","Black Swarm",0,0, "Homestead", "Avon", "Friendly", "", ""]
+	, ["03/15/2025", "L","Black Swarm",12,19, "Noblesville", "Noblesville", "HS 15s Regular Season", "", ""]
+	, ["04/09/2025", "W","Black Swarm",45,5, "City Rugby", "Arsenal Tech", "HS 15s Regular Season", "", "https://www.youtube.com/watch?v=4XuwBh8O3j0"]
+	, ["04/12/2025", "W","Black Swarm",39,10, "Louisville Crash", "Avon", "HS 15s Regular Season", "", "https://www.youtube.com/watch?v=vSAsgiwqNDw"]
+	, ["04/16/2025", "W","Black Swarm",49,0, "Carmel", "Avon", "HS 15s Regular Season", "", "https://www.youtube.com/watch?v=YGy5KbtdA5k"]
+	, ["04/19/2025", "L","Black Swarm",15,26, "Brownsburg", "Brownsburg", "HS 15s Regular Season", "", ""]
+	, ["04/23/2025", "W","Black Swarm",31,29, "Columbus", "Avon", "HS 15s Regular Season", "", ""]
+	, ["04/30/2025", "L","Black Swarm",19,41, "Zionsville", "Zionsville", "HS 15s Regular Season", "", ""]
+	, ["05/09/2025", "L","Black Swarm",5,77, "Pendleton", "Pendleton", "HS 15s Regular Season", "", ""]
+	, ["05/14/2025", "W","Black Swarm",53,0, "North Central", "Avon", "HS 15s Regular Season", "", ""]
+	, ["05/20/2025", "W","Black Swarm",43,22, "Noblesville", "Noblesville", "HS 15s Tournament", "Play In", ""]
+	, ["05/24/2025", "L","Black Swarm",10,47, "Brownsburg", "Cyntheanne Park", "HS 15s Tournament", "Semifinal", "https://www.youtube.com/watch?v=e7yfqxp2iCo"]
+];
+
+var dataSetPl = [
+  ["Abiram O.", "", "<div>7s Heart</div><div>15s Heart</div>", "", "", "", ""]
+ , ["Aiden H.", "Plainfield HS", "", "", "\u2713", "", ""]
+ , ["Alex C.", "", "\u2713", "\u2713", "", "", ""]
+ , ["Alex P.", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Alexander B.", "", "", "", "\u2713", "", ""]
+ , ["Anthony G.", "", "", "\u2713", "", "", ""]
+ , ["Armando E.", "", "<div>7s Most Dangerous</div>", "", "", "", ""]
+ , ["Asher \u201cThe Basher\u201d H.", "", "<div>15s Rookie of the Year</div>", "<div>7s Most Dangerous</div>", "", "", ""]
+ , ["Ayden L.", "", "\u2713", "", "", "", ""]
+ , ["Ayden C.", "", "", "\u2713", "", "", ""]
+ , ["Baraq A.", "", "", "\u2713", "", "", ""]
+ , ["Billy G.", "", "<div>7s Rising Star</div>", "", "", "", ""]
+ , ["Blake Fincher", "", "<div>15s Most Dangerous</div>", "", "", "", "Marian"]
+ , ["Boluwatife J.", "", "", "", "\u2713", "", ""]
+ , ["Branden L.", "", "", "\u2713", "", "", ""]
+ , ["Brayden Strawmeyer", "", "\u2713", "", "", "", "Marian"]
+ , ["Cain W.", "", "", "", "\u2713", "", ""]
+ , ["Carter B.", "", "\u2713", "", "", "", ""]
+ , ["Clayton D.", "", "\u2713", "\u2713", "", "", ""]
+ , ["Cory G.", "", "\u2713", "", "", "", ""]
+ , ["Cris\u2019tian \u201cCris\u201d R.", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Dailon Z.", "", "\u2713", "", "", "", ""]
+ , ["David C.", "", "", "", "\u2713", "", ""]
+ , ["Dominic \u201cDom\u201d P.", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Dorian \u201cEarl\u201d Gervie", "", "<div>7s MVP</div>", "<div>7s Heart</div>", "", "", "Thomas Moore"]
+ , ["Drake S.", "", "\u2713", "\u2713", "\u2713", "", ""]
+ , ["Dyson Z.", "", "\u2713", "", "", "", ""]
+ , ["Easton Fincher", "", "<div>7s Most Dangerous</div><div>15s MVP</div><div>15s Players Player</div>", "<div>7s Players Player</div>", "", "", "Marian"]
+ , ["Eli Peters", "", "<div>15s Most Improved</div>", "\u2713", "", "", "Marian"]
+ , ["Eli Swadner", "Plainfield HS", "", "\u2713", "\u2713", "", ""]
+ , ["Erik B.", "", "<div>7s Most Improved</div>", "", "", "", ""]
+ , ["Ethan P.", "Avon HS", "", "\u2713", "\u2713", "", ""]
+ , ["Gage Poland", "Avon HS", "<div>Captain</div><div>15s MVP</div>", "", "", "", "Lindenwood / Purdue Coach"]
+ , ["Godwin M.", "", "", "\u2713", "", "", ""]
+ , ["Gray Hoepfner", "Plainfield HS", "", "\u2713", "\u2713", "", ""]
+ , ["Hutton S.", "Avon HS", "\u2713", "\u2713", "<div>15s Heart</div>", "", ""]
+ , ["Isaac W.", "", "", "\u2713", "", "", ""]
+ , ["Jack H. Long II", "Avon HS", "Captain", "<div>Captain</div><div>7s MVP</div>", "", "", "IU"]
+ , ["Jaiden J.", "", "\u2713", "", "", "", ""]
+ , ["Jaimen J.", "Avon HS", "\u2713", "\u2713", "\u2713", "", ""]
+ , ["Jared S.", "", "\u2713", "", "", "", ""]
+ , ["Jason P.", "", "\u2713", "\u2713", "", "", ""]
+ , ["Jayden A.", "", "\u2713", "\u2713", "", "", ""]
+ , ["Joaquin G.", "", "", "\u2713", "", "", ""]
+ , ["Joshua L.", "", "", "\u2713", "", "", ""]
+ , ["Kamsirochukwu M.", "", "", "", "\u2713", "", ""]
+ , ["Kenna M.", "", "\u2713", "", "", "", ""]
+ , ["Kevin \u201cGrande\u201d G.", "", "\u2713", "<div>7s Most Improved</div>", "", "", ""]
+ , ["Landon C.", "", "", "\u2713", "", "", ""]
+ , ["Landon \u201cTank\u201d Stewart", "Avon HS", "\u2713", "\u2713", "<div>7s Most Dangerous</div><div>15s Westside</div>", "", ""]
+ , ["Leland P.", "", "", "", "\u2713", "", ""]
+ , ["Lorenzo D.", "Plainfield HS", "", "", "<div>15s Most Improved</div>", "", ""]
+ , ["Luke Woolsey", "Danville HS", "<div>7s Players Player</div><div>15s Rising Star</div>", "<div>Captain</div>", "<div>Captain</div><div>15s MVP</div>", "", ""]
+ , ["Maddenpapaitau \u201cPapa\u201d S.", "Greencastle HS", "", "", "\u2713", "", ""]
+ , ["Malachi L.", "", "", "\u2713", "<div>15s Players Player</div>", "", ""]
+ , ["Malakhi R.", "", "\u2713", "", "", "", ""]
+ , ["Maxwell \u201cMax\u201d D.", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Minh V.", "", "", "", "\u2713", "", ""]
+ , ["Mitchell T.", "", "<div>7s Players Player</div>", "\u2713", "", "", ""]
+ , ["Mythiusfaatea \u201cMacho\u201d S.", "Greencastle HS", "", "", "\u2713", "", ""]
+ , ["Oluwagbenga \u201cBagel\u201d O.", "", "<div>15s Most Dangerous</div>", "\u2713", "", "", ""]
+ , ["Owen L.", "", "", "", "\u2713", "", ""]
+ , ["Paxton T.", "", "", "", "<div>15s Rookie of the Year</div>", "", ""]
+ , ["Riley M.", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Ryan P.", "", "<div>7s Rookie of the Year</div>", "\u2713", "", "", ""]
+ , ["Rylan R.", "", "", "", "\u2713", "", ""]
+ , ["Rylee A.", "", "\u2713", "", "", "", ""]
+ , ["Samuel S.", "", "\u2713", "\u2713", "", "", ""]
+ , ["Samuel \u201cSam\u201d Shobande", "Avon HS", "", "", "\u2713", "", ""]
+ , ["Samuel \u201cSaaho\u201d Ladipo", "Avon HS", "", "\u2713", "\u2713", "", ""]
+ , ["Sam \u201cStanley\u201d Clements", "Triton Central HS", "", "\u2713", "\u2713", "", ""]
+ , ["Seth S.", "", "", "", "\u2713", "", ""]
+ , ["Thaxter H.", "", "", "\u2713", "", "", ""]
+ , ["TJ G.", "", "\u2713", "", "", "", "", ""]
+ , ["Tomas F.", "", "", "\u2713", "", "", ""]
+ , ["Trayvon Mathis", "", "<div>7s Players Player</div>", "", "", "", "Aquinas"]
+ , ["Ty M.", "", "\u2713", "", "", "", ""]
+ , ["Tye P.", "", "\u2713", "", "", "", ""]
+ , ["Will M.", "", "\u2713", "", "", "", ""]
+ , ["William \u201cWill\u201d Sexton", "Plainfield HS", "", "\u2713", "\u2713", "", ""]
+ , ["Zane K.", "", "", "\u2713", "", "", ""]
+ , ["Zavier \u201cMiagi\u201d C.", "Achieve Virtual", "", "<div>7s Rookie of the Year</div>", "<div>15s Most Dangerous</div>", "", ""]
+];
+
+$(function() {
+    new DataTable('#hisstory', {
+        columns: [
+            { title: "Date", type: "date", responsivePriority: 1 },
+            { title: "W/L", responsivePriority: 2 },
+            { title: "Team", className: "never" },
+            { title: "PF", responsivePriority: 1 },
+            { title: "PA", responsivePriority: 1 },
+            { title: 'Opponent', responsivePriority: 1 },
+            { title: 'Location' },
+            { title: 'Competition', responsivePriority: 3 },
+            { title: 'Note', responsivePriority: 4 },
+            { title: 'Video', type: "html", responsivePriority: 2,
+                render: function ( data, type, row ) {
+                    if ( data.trim() != '' ) {
+                        return '<a href="'+data+'" target="_blank">Watch</a>';
+                    }
+                    return '';
+                } }
+        ],
+        data: dataSet,
+        responsive: true,
+        order: [[0, "desc", ""]]
+    });
+
+    new DataTable('#hisalum', {
+        columns: [
+            { title: "Player", responsivePriority: 1 },
+            { title: "School", responsivePriority: 6 },
+            { title: '2022-3', responsivePriority: 7, type: "html" },
+            { title: "2023-4", responsivePriority: 4, type: "html" },
+            { title: "2024-5", responsivePriority: 3, type: "html" },
+            { title: "2025-6", responsivePriority: 2, type: "html", className: "never" },
+            { title: 'College', responsivePriority: 7, type: "html" }
+        ],
+        data: dataSetPl,
+        responsive: true,
+        order: [[4, "desc"], [0, "asc"]]
+    });
+});

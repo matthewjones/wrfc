@@ -1,0 +1,3 @@
+/* grid template area for team banners */ .team-title-text { grid-area: ttt1; } .team-title-btn { grid-area: ttb1; } .team-title { grid-area: tt1; } .team-logo { grid-area: tl1; } #team-logo {  text-align: center; } .team-head-grid {display: grid;grid-template-columns: 1fr 2fr;gap: 1em 2em;grid-template-areas: "tl1 tt1"
+"tl1 ttt1"
+"tl1 ttb1";}@media (max-width: 767px) { .team-head-grid {display: block;} .team-logo > img {margin: auto;} } .team-header-dark .team-title-text, .team-header-dark .team-title {color: #FAFAFA;} .team-title-text .slogans {font-style: italic;font-size: 1.1em;margin-bottom: .5em;}
