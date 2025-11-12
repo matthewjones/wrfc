@@ -32,6 +32,7 @@ body > :is(header, footer), main, section, article { container-type:inline-size;
 .is-align-items-end { align-items: end !important; }
 @media print, screen and (max-width: 768px) {.is-hidden-mobile{display:none!important}} @media print,screen and (min-width:769px){.is-flex-tablet{display:flex!important}}
 .bg-history-table { background-color: rgb(243, 244, 246); }
+.text-center { text-align: center; }
 
 .tag { align-items: center; background-color: hsl(198, 100%, 96%); border-radius: 0.375rem; color: hsl(198, 100%, 15%); display: inline-flex; font-size: 0.75rem; height: 2em; justify-content: center; line-height: 1.5; padding-left: .75em; padding-right: .75em; white-space: nowrap; }
 
