@@ -13,7 +13,7 @@ display: block; position: absolute; pointer-events: none; width: 100%; left: 0; 
     div.register_blurb { flex-direction: row; }
 }
 
-div.teams_banner {background-color: #fff;}
+div.teams_banner {background-color: #fff; padding: 2rem;}
 div.teams_grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem 1rem; }
 img.team_img { max-width: minmax(100%, 300px); }
 
