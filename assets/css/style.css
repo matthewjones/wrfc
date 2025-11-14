@@ -30,6 +30,7 @@ ul.mobile-list, ul.mobile-list ul { list-style: none; }
 ul.mobile-list ul { margin-left: 1rem; }
 ul.mobile-list a, ul.mobile-list a:visited, ul.mobile-list a:hover { color: currentColor; text-decoration: none; }
 div.mobile-nav-group { border-bottom: 2px solid currentColor; font-weight: 500; }
+div.mobile-menu ul { font-size: 1.2rem; line-height: 1.6; }
 button[data-current=opened] .shown-open, button[data-current=closed] .shown-closed { display: block; }
 button[data-current=closed] .shown-open, button[data-current=opened] .shown-closed { display: none }
 
