@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Westside Rugby Football Club</title>
+  <meta name="description" content="The Westside Rugby Football Club, USA Rugby, and Rugby Indiana are committed to ensuring a positive youth rugby experience. We provide league-wide benefits for our coaches, parents, and players of all ages (flag through high school varsity and adult leagues).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&amp;family=Open+Sans:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/style.css?cc=1763007383448">
+  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/style.css?cc=1763094246476">
   <!--
-  <meta name="description" content="">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -33,7 +33,18 @@ html {
   <style>
 .bg-lined { background-size: initial; background-repeat: repeat; background-image: url(https://matthewjones.github.io/wrfc/assets/img/background-tile-02.webp) !important; background-color: rgb(249, 247, 248) !important; }
 .team-header-dark {padding: 1em;background-position: center bottom;background-blend-mode: overlay;background-image: url(https://matthewjones.github.io/wrfc/assets/img/team-head-bg-sm.jpg) !important; background-color: #242424B0 !important;width: 100%;max-width: 100%;background-repeat: none;}
+@media (max-width: 35em) {
+     /* ul.menu-bar {
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(25vh, 8rem) 2rem;
+        align-items: start;
 
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+     } */
+}
 </style>
  </head>
  <body class="bg-lined">
@@ -41,8 +52,8 @@ html {
    <a href="#main-content" id="skip-nav-link" class="skip-anchors" aria-label="Skip Navigation">Skip</a>
    <div class="wrapper h-100">
     <div class="primary-header__inner">
-     <a href="https://matthewjones.github.io/wrfc/"> <img src="https://matthewjones.github.io/wrfc/assets/img/westside_rugby_club_200.webp" alt="" id="logo" data-actual-width="200" data-actual-height="200" class="logo"> </a>
-     <ul class="menu-bar">
+     <a href="https://matthewjones.github.io/wrfc/" aria-label=" Home"> <img src="https://matthewjones.github.io/wrfc/assets/img/westside_rugby_club_200.webp" alt="" id="logo" data-actual-width="200" data-actual-height="200" class="logo"> </a>
+     <ul class="menu-bar is-hidden-mobile">
       <li><a href="https://matthewjones.github.io/wrfc/">Home</a></li>
       <li><a href="#">Teams <span class="caretdown">∨</span></a>
        <div class="dropdown-menu">
@@ -68,7 +79,36 @@ html {
       <li><a href="https://www.paypal.com/donate/?hosted_button_id=3HSWXE6QAP7RA" target="_blank">Donate</a></li>
       <li><a href="https://westsiderugbystore.com/" target="_blank">Store</a></li>
      </ul>
+     <button id="mobile-menu-button" class="wrfc-btn is-hidden-tablet" data-current="closed"><span class="shown-closed">☰</span> <span class="shown-open">×</span></button>
     </div>
+   </div>
+   <div class="is-hidden-tablet mobile-menu" data-current="closed">
+    <ul class="mobile-list">
+     <li><a href="https://matthewjones.github.io/wrfc/">Home</a></li>
+     <li>
+      <div class="mobile-nav-group">Teams</div>
+      <ul>
+       <li><a href="https://matthewjones.github.io/wrfc/black-swarm/">Black Swarm</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/revenge/">Revenge</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/outcasts/">Outcasts</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/revenge-ms/">Revenge (7-8)</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/westside-youth/">Youth Outcasts (2-6)</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/westside-unified/">Unified</a></li>
+      </ul>
+     </li>
+     <li>
+      <div class="mobile-nav-group">Info</div>
+      <ul>
+       <li><a href="https://matthewjones.github.io/wrfc/board/">Board Members</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/registration/">Registration Help</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/rugby-simplified/">Rugby Simplified</a></li>
+       <li><a href="https://rugbyindiana.com/">Rugby Indiana</a></li>
+       <li><a href="https://matthewjones.github.io/wrfc/contact/">Contact</a></li>
+      </ul>
+     </li>
+     <li><a href="https://www.paypal.com/donate/?hosted_button_id=3HSWXE6QAP7RA" target="_blank">Donate</a></li>
+     <li><a href="https://westsiderugbystore.com/" target="_blank">Store</a></li>
+    </ul>
    </div>
   </header>
   <style type="text/css" media="screen">
@@ -96,7 +136,7 @@ html {
   </footer>
   <a href="#main-content" id="fade-anchor" class="skip-anchors" aria-label="Back to Top">⋀</a>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://matthewjones.github.io/wrfc/assets/js/site.js?cc=1763007383448"></script>
+  <script src="https://matthewjones.github.io/wrfc/assets/js/site.js?cc=1763094246476"></script>
   <script>
 
         $(function() {

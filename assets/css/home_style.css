@@ -13,11 +13,9 @@ display: block; position: absolute; pointer-events: none; width: 100%; left: 0; 
     div.register_blurb { flex-direction: row; }
 }
 
-div.teams_banner {background-color: #fff; padding: 2rem;}
-div.teams_grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem 1rem; }
-img.team_img { max-width: minmax(100%, 300px); }
+div.teams_banner {background-color: #fff; padding: 2rem;} div.teams_grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem 1rem; } img.team_img { max-width: minmax(100%, 300px); }
 
+div.content_banner { background-image: linear-gradient(0, rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,1)); padding-bottom: 3rem; } div.content_body.is-bordered { border-radius: 1rem; border: 2px solid #242424; padding: 1rem; } div.content_text > div:not(:last-of-type) { margin-bottom: 0.75rem; } div.content_body:not(:last-of-type) { margin-bottom: 3rem; } img.help-img { max-width: 100%; margin: 1rem auto; }
 
-div.sponsor_banner {background-color: #fff; padding: 2rem;}
-div.sponsor_grid { display: grid; grid-template-columns: repeat(auto-fit, 250px); gap: 2rem; justify-content: center; justify-items: center; align-items: center; }
-img.sponsor_img { max-width: minmax(100%, 300px); }
+div.sponsor_banner {background-color: #fff; padding: 2rem;} div.sponsor_grid { display: grid; grid-template-columns: repeat(auto-fit, 250px); gap: 2rem; justify-content: center; justify-items: center; align-items: center; } img.sponsor_img { max-width: minmax(100%, 300px); }
+

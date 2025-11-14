@@ -13,3 +13,12 @@ function scrollFunction() {
         fadeAnchor.classList.remove('visible');
     }
 }
+
+$("#mobile-menu-button").on("click", function() {
+    var thisState = $(this).attr("data-current");
+    var nextState = "closed";
+    if ( thisState == "closed" ) {
+        nextState = "opened";
+    }
+    $("#mobile-menu-button,.mobile-menu").attr("data-current", nextState);
+});
