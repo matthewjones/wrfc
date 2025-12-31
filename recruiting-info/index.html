@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&amp;family=Open+Sans:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/style.css?cc=1767213251275">
-  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/team_headers.css?cc=1767213251275">
-  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/team_style.css?cc=1767213251275">
   <!--
 
   <meta property="og:title" content="">
@@ -114,139 +112,76 @@ html {
    </div>
   </header>
   <main id="main-content">
-   <div class="team-header-dark">
-    <div class="wrapper">
-     <div class="team-head-grid">
-      <div id="team-logo" class="team-logo">
-       <img width="300" height="300" src="https://matthewjones.github.io/wrfc/assets/img/westside_rugby_club_300.webp" title="Westside Youth Outcasts">
-      </div>
-      <div id="team-title" class="team-title">
-       <h1>Westside Youth Outcasts</h1>
-      </div>
-      <div id="team-title-text" class="team-title-text">
-       <div class="descriptions">
-        <p>We are the Westside Youth Outcasts, a coed introductory rugby club with two teams. Grades 2-4 get to learn the basics with less contact by playing flag rugby. Grades 5-6 play tackle, and learn the fundamentals and proper techniques for tackling.</p>
-        <p>We welcome new or experienced players to join.</p>
-        <p>We were founded as part of the Westside Rugby Football Club family in June 2024.</p>
-        <p>Our seasons are in the spring.</p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
    <div class="wrapper">
-    <div class="team-buttons">
-     <a href="https://matthewjones.github.io/wrfc/westside-youth/#flagSchedule" class="wrfc-btn">Coed Flag 2/3/4 Grade</a> <a href="https://matthewjones.github.io/wrfc/westside-youth/#tackleSchedule" class="wrfc-btn">Coed Tackle 5/6 Grade</a>
+    <div class="page-header">
+     <h1>Recruiting Information</h1>
     </div>
-   </div>
-   <div class="is-bg-light">
-    <h2>Schedule</h2>
-    <div id="matchSchedule">
-     <ul class="matchSchedule">
-      <li class="dspEvntLine is-align-items-center mb-0 seasonHead" id="flagSchedule">
-       <div class="dspEvntEvent dspEvntSeason">Coed Flag 2/3/4</div>
-       <div class="dspEvntEventRt">
-        <p class="my-auto">Spring 2026</p>
-       </div>
-      </li>
-      <li class="dspEvntLine is-align-items-center mb-0 can-toggle collapsed">
-       <div class="dspEvntEvent">2/3/4 Schedule is Coming Soon!</div>
-       <div class="dspEvntEventRt">
-        <p class=""></p>
-       </div>
-       <div class="dspEvntLine-left">
-        <div>
-         <p>Free Admission</p>
-         <p>Free Parking</p>
+    <div class="page-body">
+     <p>Please, no solicitation. All solicitation emails will be disregarded.</p>
+     <p>This form is intended for sharing information about potential players with our coaches.</p>
+     <form method="post" action="https://matthewjones.github.io/wrfc/recruiting-info-thanks/">
+      <div class="wrfc-form">
+       <label>Player's Name <input type="text" name="playerName"></label>
+       <div class="wrfc-form-row">
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Are You the? <select name="relation"><option>Parent</option><option>Player</option><option>Other</option></select></label>
+        </div>
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Preferred Contact Type? 
+          <div style="padding:0.5em;display:flex;gap:1em;">
+           <label><input type="checkbox" name="contact" value="Email"> Email</label> <label><input type="checkbox" name="contact" value="Phone"> Phone</label> <label><input type="checkbox" name="contact" value="Text"> Text</label>
+          </div> </label>
         </div>
        </div>
-       <div class="dspEvntLine-right">
-        <div>
-         <strong>Sycamore Elementary School</strong>
-         <br>
-         7878 E County Rd 100 N
-         <br>
-         Avon, IN 46123
-         <br>
-         <a href="https://maps.app.goo.gl/jeypRUc6mXAxrTz8A" target="_blank" class="has-text-link">Open Map</a>
+       <label>Your Name <input type="text" name="name"></label>
+       <div class="wrfc-form-row">
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Your Email <input type="email" name="email"></label>
+        </div>
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Your Phone <input type="phone" name="phone"></label>
         </div>
        </div>
-      </li>
-      <li class="dspEvnt">
-       <article class="media dspEvntMatch">
-        <figure class="media-left">
-         <p class="image is-64x64 dspEvntIcon"><img src="https://matthewjones.github.io/wrfc/assets/teams/head_404_silver.webp"></p>
-        </figure>
-        <div class="media-content">
-         <div class="content">
-          <div class="is-flex is-flex-direction-column is-justify-content-space-around" style="min-height: 96px;">
-           <div class="dspEvntOpponent is-flex is-align-items-center">
-            <div>TBD</div>
-           </div>
-          </div>
-         </div>
+       <div class="wrfc-form-row">
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Player's School and Grade <input type="text" name="schoolInfo"></label>
         </div>
-        <div class="media-right pr-3 is-flex is-flex-direction-column is-justify-content-space-around is-align-items-end" style="min-height: 96px;">
-         <div class="dspEvntScore has-text-success has-text-weight-bold"></div>
-        </div>
-       </article>
-      </li>
-      <li class="dspEvntLine is-align-items-center mb-0 seasonHead" id="tackleSchedule">
-       <div class="dspEvntEvent dspEvntSeason">Coed Tackle 5/6</div>
-       <div class="dspEvntEventRt">
-        <p class="my-auto">Spring 2026</p>
-       </div>
-      </li>
-      <li class="dspEvntLine is-align-items-center mb-0 can-toggle collapsed">
-       <div class="dspEvntEvent">5/6 Schedule is Coming Soon!</div>
-       <div class="dspEvntEventRt">
-        <p class=""></p>
-       </div>
-       <div class="dspEvntLine-left">
-        <div>
-         <p>Free Admission</p>
-         <p>Free Parking</p>
+        <div style="flex-grow: 1;min-width: 10em;">
+         <label>Previous Rugby Experience <input type="text" name="rugbyExp"></label>
         </div>
        </div>
-       <div class="dspEvntLine-right">
-        <div>
-         <strong>Sycamore Elementary School</strong>
-         <br>
-         7878 E County Rd 100 N
-         <br>
-         Avon, IN 46123
-         <br>
-         <a href="https://maps.app.goo.gl/jeypRUc6mXAxrTz8A" target="_blank" class="has-text-link">Open Map</a>
-        </div>
+       <label>Comments or Questions <textarea name="comments" style="height:6.5em;"></textarea></label>
+       <div>
+        <button type="submit" class="wrfc-btn">Send Info</button>
        </div>
-      </li>
-      <li class="dspEvnt">
-       <article class="media dspEvntMatch">
-        <figure class="media-left">
-         <p class="image is-64x64 dspEvntIcon"><img src="https://matthewjones.github.io/wrfc/assets/teams/head_404_silver.webp"></p>
-        </figure>
-        <div class="media-content">
-         <div class="content">
-          <div class="is-flex is-flex-direction-column is-justify-content-space-around" style="min-height: 96px;">
-           <div class="dspEvntOpponent is-flex is-align-items-center">
-            <div>TBD</div>
-           </div>
-          </div>
-         </div>
-        </div>
-        <div class="media-right pr-3 is-flex is-flex-direction-column is-justify-content-space-around is-align-items-end" style="min-height: 96px;">
-         <div class="dspEvntScore has-text-success has-text-weight-bold"></div>
-        </div>
-       </article>
-      </li>
-     </ul>
+      </div>
+     </form>
+     <style>
+    .wrfc-form input:not([type=checkbox], [type=radio]), .wrfc-form textarea, .wrfc-form select {
+        border: 1px solid #242424;
+        border-radius: 0.2em;
+        width: 100%;
+        padding: 0.5em;
+    }
+    .wrfc-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .wrfc-form-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+</style>
     </div>
    </div>
    <div class="wrapper">
     <div class="foot-container">
      <div class="is-flex is-flex-direction-column is-align-items-center">
       <h4>ABOUT</h4>
-      <p>The Westside Youth Outcasts are an introductory youth coed rugby club for grades 2-6.</p>
+      <p>The Westside Rugby Football Club welcomes people of all experience levels.</p>
      </div>
      <div class="is-flex is-flex-direction-column is-align-items-center">
       <h4>CONTACT</h4>
@@ -284,7 +219,6 @@ html {
   <a href="#main-content" id="fade-anchor" class="skip-anchors" aria-label="Back to Top">▲</a> <!-- &xwedge; -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://matthewjones.github.io/wrfc/assets/js/site.js?cc=1767213251275"></script>
-  <script src="https://matthewjones.github.io/wrfc/assets/js/team.js?cc=1767213251275"></script>
   <script>
 
         $(function() {
