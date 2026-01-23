@@ -84,6 +84,19 @@ var dataSet = [
 	, ["05/14/2025", "W","Revenge",65,10, "Noblesville", "Avon", "HS 15s Regular Season", "", "https://youtu.be/34sbln528Zs"]
 	, ["05/24/2025", "W","Revenge",36,19, "Warsaw", "Cyntheanne Park", "HS 15s Tournament", "Semifinal", "https://youtu.be/xk1RW0fkkn0"]
 	, ["05/26/2025", "W","Revenge",24,17, "Narwhals", "Cyntheanne Park", "HS 15s Tournament", "Spring 15s DI Champion", "https://www.youtube.com/watch?v=XADfDlwTn2E"]
+
+	, ["09/21/2025", "D","Revenge",17,17, "Westfield A", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/21/2025", "D","Revenge",12,12, "Mudsocks", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/21/2025", "L","Revenge",15,20, "North Central", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "W","Revenge",20,5, "Westfield B", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "L","Revenge",5,34, "Carmel", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "W","Revenge",31,5, "Pendleton", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "L","Revenge",17,27, "Penn A", "Moose Rugby Grounds", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "W","Revenge",24,5, "Noblesville", "Moose Rugby Grounds", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "W","Revenge",43,5, "Penn B", "Moose Rugby Grounds", "HS 7s Regular Season", "", ""]
+	, ["10/12/2025", "L","Revenge",0,27, "Narwhals", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/12/2025", "L","Revenge",5,22, "Zionsville", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/12/2025", "W","Revenge",22,10, "Westfield", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
 ];
 
 var dataSetPl = [

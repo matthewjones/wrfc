@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&amp;family=Open+Sans:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/style.css?cc=1767213251275">
-  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/home_style.css?cc=1767213251275">
+  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/style.css?cc=1769141626685">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
+  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/home_style.css?cc=1769141626685">
+  <link rel="stylesheet" href="https://matthewjones.github.io/wrfc/assets/css/event_cal.css?cc=1769141626685">
   <!--
 
   <meta property="og:title" content="">
@@ -46,7 +48,9 @@ html {
         backdrop-filter: blur(1rem);
      } */
 }
-</style>
+div.home_banner {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.31) 99%), url(https://matthewjones.github.io/wrfc/assets/img/homepage_banner.webp) !important;
+}</style>
  </head>
  <body class="bg-lined bodyfh">
   <header id="header-nav" class="primary-header">
@@ -121,7 +125,14 @@ html {
        <p style="font-size: 1.5rem; line-height: 1.6;"><strong>The Westside Rugby Football Club</strong>, USA Rugby, and Rugby Indiana are committed to ensuring a positive youth rugby experience. We provide league-wide benefits for our coaches, parents, and players of all ages (flag through high school varsity and adult leagues).</p>
       </div>
       <div class="register_blurb">
-       <h2>Registration has Opened for Spring 2026!</h2>
+       <div>
+        <h2>Registration has Opened for Spring 2026!</h2>
+        <div class="reg_xtra_txt">
+         <strong>Registration is not required to check us out!!</strong>
+         <br>
+         Come to practice and we’ll help you on next steps.
+        </div>
+       </div>
        <a href="https://auth.rugbyxplorer.com.au/login?clientId=portal&amp;amp;codeChallenge=&amp;amp;redirectPath=/" class="wrfc-btn">Register Now</a>
       </div>
      </div>
@@ -208,6 +219,16 @@ html {
       </div>
      </div>
      <div class="content_body">
+      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
+      <div id="calendar"></div>
+      <div>
+       <small>* as of 1/22/2026</small>
+      </div>
+      <div>
+       <small>Our Home Pitch is Sycamore Elementary School, 7878 E County Rd 100 N, Avon, IN 46123 - <a href="https://maps.app.goo.gl/jeypRUc6mXAxrTz8A" target="_blank" class="has-text-link">Open Map</a> </small>
+      </div>
+     </div>
+     <div class="content_body">
       <h2>Want to Join the Family?</h2>
       <div class="content_text">
        <div>You can join the family as a player, parent, coach, supporter or just a fan.</div>
@@ -236,19 +257,15 @@ html {
     </div>
    </div>
   </main>
-  <style>
-div.home_banner {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.31) 99%), url(https://matthewjones.github.io/wrfc/assets/img/homepage_banner.webp) !important;
-}
-</style>
   <footer id="main-footer">
    <div class="wrapper clearfix">
-    <div id="footer-info">Copyright © 2023-25 | All Rights Reserved | Westside Rugby Football Club</div>
+    <div id="footer-info">Copyright © 2023-26 | All Rights Reserved | Westside Rugby Football Club</div>
    </div>
   </footer>
   <a href="#main-content" id="fade-anchor" class="skip-anchors" aria-label="Back to Top">▲</a> <!-- &xwedge; -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://matthewjones.github.io/wrfc/assets/js/site.js?cc=1767213251275"></script>
+  <script src="https://matthewjones.github.io/wrfc/assets/js/site.js?cc=1769141626685"></script>
+  <script src="https://matthewjones.github.io/wrfc/assets/js/event_cal.js?cc=1769141626685"></script>
   <script>
 
         $(function() {

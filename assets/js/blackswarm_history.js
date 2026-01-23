@@ -97,6 +97,19 @@ var dataSet = [
 	, ["05/14/2025", "W","Black Swarm",53,0, "North Central", "Avon", "HS 15s Regular Season", "", ""]
 	, ["05/20/2025", "W","Black Swarm",43,22, "Noblesville", "Noblesville", "HS 15s Tournament", "Play In", ""]
 	, ["05/24/2025", "L","Black Swarm",10,47, "Brownsburg", "Cyntheanne Park", "HS 15s Tournament", "Semifinal", "https://www.youtube.com/watch?v=e7yfqxp2iCo"]
+
+	, ["09/21/2025", "L","Black Swarm",10,12, "Mudsocks", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/21/2025", "L","Black Swarm",0,29, "Westfield", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/21/2025", "W","Black Swarm",17,14, "Zionsville", "Westfield ", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "L","Black Swarm",12,19, "Brownsburg", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "W","Black Swarm",28,7, "Carmel", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["09/28/2025", "W","Black Swarm",14,12, "Noblesville", "Westfield", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "L","Black Swarm",12,25, "Penn", "Moose Rugby Grounds ", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "L","Black Swarm",22,26, "Noblesville B", "Moose Rugby Grounds ", "HS 7s Regular Season", "", ""]
+	, ["10/05/2025", "W","Black Swarm",33,7, "Homestead B", "Moose Rugby Grounds ", "HS 7s Regular Season", "", ""]
+	, ["10/12/2025", "L","Black Swarm",19,31, "Bishop Dwenger", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/12/2025", "L","Black Swarm",12,19, "Mudsocks", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
+	, ["10/12/2025", "L","Black Swarm",7,25, "Westfield", "Moose Rugby Grounds", "HS 7s Tournament", "", ""]
 ];
 
 var dataSetPl = [
