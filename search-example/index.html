@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Example - Lunr.js</title>
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .search-results {
+            list-style: none;
+            padding: 0;
+        }
+
+        .search-result {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .search-result h3 {
+            margin: 0 0 8px 0;
+        }
+
+        .search-result a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .search-result a:hover {
+            text-decoration: underline;
+        }
+
+        .search-result-excerpt {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .no-results {
+            color: #999;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+ </head>
+ <body>
+  <h1>Search</h1>
+  <input type="text" id="search-input" class="search-box" placeholder="Search..." autocomplete="off">
+  <ul id="search-results" class="search-results"></ul>
+  <script>
+        let searchIndex;
+        let documents = [];
+
+        // Load search index
+        fetch('/search-index.json')
+            .then(response => response.json())
+            .then(data => {
+                documents = data;
+
+                // Build Lunr index
+                searchIndex = lunr(function () {
+                    this.ref('id');
+                    this.field('title', { boost: 10 });
+                    this.field('content');
+                    this.field('tags', { boost: 5 });
+                    this.field('categories', { boost: 5 });
+
+                    documents.forEach(doc => {
+                        this.add(doc);
+                    });
+                });
+
+                console.log('Search index loaded:', documents.length, 'documents');
+            })
+            .catch(err => console.error('Error loading search index:', err));
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+
+        searchInput.addEventListener('input', function (e) {
+            const query = e.target.value.trim();
+
+            if (query.length < 2) {
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            try {
+                const results = searchIndex.search(query);
+                displayResults(results);
+            } catch (err) {
+                console.error('Search error:', err);
+            }
+        });
+
+        function displayResults(results) {
+            if (results.length === 0) {
+                searchResults.innerHTML = '<li class="no-results">No results found</li>';
+                return;
+            }
+
+            const html = results.map(result => {
+                const doc = documents.find(d => d.id === result.ref);
+                if (!doc) return '';
+
+                return `
+                    <li class="search-result">
+                        <h3><a href="${doc.url}">${doc.title}</a></h3>
+                        <p class="search-result-excerpt">${doc.content || doc.excerpt}</p>
+                    </li>
+                `;
+            }).join('');
+
+            searchResults.innerHTML = html;
+        }
+    </script>
+ </body>
+</html>

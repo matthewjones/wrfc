@@ -19,4 +19,4 @@ div.content_banner { background-image: linear-gradient(0, rgba(255,255,255,1), r
 
 div.sponsor_banner {background-color: #fff; padding: 2rem;} div.sponsor_grid { display: grid; grid-template-columns: repeat(auto-fit, 250px); gap: 2rem; justify-content: center; justify-items: center; align-items: center; } img.sponsor_img { max-width: minmax(100%, 300px); }
 
-div.reg_xtra_txt { text-align: center;font-size: 1.3rem;font-weight: 400!important; }
+div.reg_xtra_txt { background-color: #5B8500; box-shadow: 0.5rem 0.5rem 0px 0px rgba(0,0,0,0.3); text-align: center;font-size: 1.3rem;font-weight: 400!important; border-radius: 6px; margin-bottom: 1rem; }
