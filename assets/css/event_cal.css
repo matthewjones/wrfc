@@ -4,3 +4,34 @@
         gap: 0.5em;
     }
 }
+
+.HSCommon { background-color: #dbc589; border-color: #c0c0c0; color: #222; }
+.HSInPractice { background-color: #edd594; border-color: #dfdfdf; color: #222; }
+.HSGirls { background-color: #afb1ae; border-color: #c0c0c0; color: #222; }
+.HSGirls .fc-list-event-dot { border-color: #c0c0c0!important; }
+.HSGirlsPractice { background-color: #d7dad6; border-color: #dfdfdf; color: #222; }
+.HSBoys { background-color: #cca43f; border-color: #FFD700; color: #222; }
+.HSBoysPractice { background-color: #e6b947; border-color: #dfdfdf; color: #222; }
+.GameOutcasts { background-color: #821f17; border-color: #821f17; color: #f0f0f0; }
+.PracticeOutcasts { background-color: #ffcb47; border-color: #bf2e22; color: #222; }
+.MSGirls { background-color: #cea2fd; border-color: #cea2fd; color: #222; }
+.MSGirlsPractice { background-color: #edbaff; border-color: #edbaff; color: #222; }
+.MSBoys { background-color: #6F8FAF; border-color: #6F8FAF; color: #222; }
+.MSBoysPractice { background-color: #7a9ec1; border-color: #7a9ec1; color: #222; }
+.Coed { background-color: #663399; border-color: #663399; color: #f0f0f0; }
+.CoedPractice { background-color: #8844cc; border-color: #8844cc; color: #f0f0f0; }
+.Flag { background-color: #f73718; border-color: #f73718; color: #222; }
+.FlagPractice { background-color: #ff3d1a; border-color: #ff3d1a; color: #222; }
+.Unity { background-color: #4cbb17; border-color: #4cbb17; color: #222; }
+.UnityPractice { background-color: #59dc1b; border-color: #59dc1b; color: #222; }
+
+.HSCommon .fc-event-main, .HSInPractice .fc-event-main,
+.HSGirls .fc-event-main, .HSGirlsPractice .fc-event-main,
+.HSBoys .fc-event-main, .HSBoysPractice .fc-event-main,
+.MSGirls .fc-event-main, .MSGirlsPractice .fc-event-main,
+.MSBoys .fc-event-main, .MSBoysPractice .fc-event-main,
+.Unity .fc-event-main, .UnityPractice .fc-event-main,
+.Flag .fc-event-main, .FlagPractice .fc-event-main,
+.PracticeOutcasts .fc-event-main, .fc-list-event:hover {
+    color: #222;
+}
